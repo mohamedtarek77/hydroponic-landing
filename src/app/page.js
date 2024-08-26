@@ -46,23 +46,11 @@ export default function Home() {
   
         </div>
       </div>
-      <div className={`bg-primary  ${styles.flexCenter} `}>
-        <div className={`${styles.boxWidth}`}>
-          <About />
-        </div>
-      </div>
+     
       <div className={`bg-primary ${styles.paddingX}   ${styles.flexCenter} `}>
         <div className={`${styles.boxWidth}`}>
-           {/* <Stat/> */}
-           {/* <Business/>  */}
-           {/* <Why/>  */}
-           {/* <Values/> */}
-    
-           {/* <Billing/> 
-           <CardDeal/> */}
-           <Testimonials/>
-           {/* <Clients/> */}
-           {/* <CTA/>  */}
+       
+          
            <Footer/>
         </div>
       </div>

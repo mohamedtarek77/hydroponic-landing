@@ -28,23 +28,16 @@ export const navLinks = [
     id: "products",
     title: "Products",
   },
-  {
-    id: "about",
-    title: "About",
-  },
   // {
-  //   id: "why",
-  //   title: "Why AST ?",
-  // },
-  // {
-  //   id: "values",
-  //   title: "Values",
+  //   id: "about",
+  //   title: "About",
   // },
 
-  {
-    id: "contact",
-    title: "Contact us",
-  },
+
+  // {
+  //   id: "contact",
+  //   title: "Contact us",
+  // },
 ];
 
 export const products = [

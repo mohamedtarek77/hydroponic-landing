@@ -30,7 +30,7 @@ const Footer = () => {
       id="contact"
       className={`${styles.flexCenter} ${styles.paddingY} flex-col`}
     >
-      <div
+      {/* <div
         className={`${styles.flexStart} md:flex-row justify-between items-center flex-col mb-8 w-full  text-secondary`}
       >
         <div className="flex-[1] flex flex-col justify-start mr-10">
@@ -49,15 +49,12 @@ const Footer = () => {
                 key={footerLink.title}
                 className={`${styles.heading4} flex flex-col items-center ss:my-0 my-4 min-w-[150px]`}
               >
-                {/* <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
-                  {footerLink.title}
-                </h4> */}
+           
                 <ul className="list-none mt-4 ">
                   {footerLink.links.map((link, index) => {
                     const Icon = link.icon;
 
                     return (
-                      // <div key={link.name} className=" flex flex-row  gap-3 text-dimWhite  hover:text-secondary cursor-pointer">
                       <div
                         key={link.name}
                         className={`flex flex-row items-center  gap-3 text-dimWhite text-secondary  hover:text-secondary cursor-pointer  ${
@@ -70,11 +67,7 @@ const Footer = () => {
                           window.open(whatsappLink, "_blank");
                         }}
                       >
-                        {/* <img
-                          className="h-10 w-10 text-dimWhite rounded-full "
-                          src={link.icon}
-                          alt={link.name}
-                        /> */}
+                    
                         <Icon className="h-5 w-5 text-center rounded-full" />
                         <li
                           className={`font-poppins font-normal  text-[16px] leading-[24px] 
@@ -112,7 +105,7 @@ const Footer = () => {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
       <div className="w-full  flex justify-center items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
         <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-secondary">
