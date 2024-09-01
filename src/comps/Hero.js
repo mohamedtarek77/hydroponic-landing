@@ -41,7 +41,7 @@ const Hero = () => {
           className={`  flex flex-col flex-wrap  items-center justify-center gap-3 md:my-0 mx-5 my-10 `}
         >
           <h1 className=" font-poppins font-semibold ss:text-[42px]  text-[32px] text-secondary ss:leading-[100.8px] leading-[75px]">
-          Hydrogrowhub
+          HydroGrowHub
           </h1>
           <Image
             src={NFT}

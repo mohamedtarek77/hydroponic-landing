@@ -12,7 +12,7 @@ const About = () => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Hydrogrowhub",
+    "name": "HydroGrowHub",
     "url": "https://hydrogrowhub.mtarex.com/",
     "description": "Hydrogrowhub specializes in hydroponics and helping individuals succeed in home gardening. We recommend top-quality hydroponic equipment and supplies.",
   };
@@ -25,11 +25,11 @@ const About = () => {
     <>
       <Head>
         <title>
-          About Us | Hydrogrowhub - Your Hydroponic Gardening Partner
+          About Us | HydroGrowHub - Your Hydroponic Gardening Partner
         </title>
         <meta
           name="description"
-          content="At Hydrogrowhub, we are passionate about hydroponics and dedicated to helping you succeed in your home gardening journey. We connect you with the best hydroponic equipment and trusted suppliers."
+          content="At HydroGrowHub, we are passionate about hydroponics and dedicated to helping you succeed in your home gardening journey. We connect you with the best hydroponic equipment and trusted suppliers."
         />
         <meta
           name="keywords"
@@ -55,13 +55,13 @@ const About = () => {
             className={`flex flex-col justify-center items-center xl:px-0 sm:px-16 px-6`}
           >
             <h1 className="font-poppins font-semibold ss:text-[32px] text-[22px] text-secondary ss:leading-[100.8px] leading-[45px]">
-              About Hydrogrowhub - Your Hydroponic Gardening Partner
+              About HydroGrowHub - Your Hydroponic Gardening Partner
             </h1>
 
             <p
               className={`${styles.paragraph} text-secondary max-w-[1000px] mt-5`}
             >
-              Welcome to <strong>Hydrogrowhub</strong>, your ultimate resource
+              Welcome to <strong>HydroGrowHub</strong>, your ultimate resource
               for hydroponics and modern agriculture. We are passionate about
               sustainable gardening and are dedicated to helping you thrive in
               your home gardening journey. Rather than selling our own products,
