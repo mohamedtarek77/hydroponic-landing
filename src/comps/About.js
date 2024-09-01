@@ -54,9 +54,9 @@ const About = () => {
           <div
             className={`flex flex-col justify-center items-center xl:px-0 sm:px-16 px-6`}
           >
-            <h1 className="font-poppins font-semibold ss:text-[32px] text-[22px] text-secondary ss:leading-[100.8px] leading-[45px]">
+            <h2 className="font-poppins font-semibold ss:text-[32px] text-[22px] text-secondary ss:leading-[100.8px] leading-[45px]">
               About HydroGrowHub - Your Hydroponic Gardening Partner
-            </h1>
+            </h2>
 
             <p
               className={`${styles.paragraph} text-secondary max-w-[1000px] mt-5`}

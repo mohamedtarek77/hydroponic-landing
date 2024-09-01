@@ -15,11 +15,11 @@ const ProductCard = ({ content, name, title, img, link }) => {
         </h4>
         <button
           // className="bg-btn p-5 border rounded-xl font-semibold  text-[14px]  "
-          className=" flex flex-col justify-center items-center sm:p-5 p-2 border rounded-xl font-semibold  text-[12px]  "
+          className=" flex flex-col justify-center items-center sm:p-5 p-2 border rounded-xl font-semibold  sm:text-[11px]  text-[9px] "
           onClick={() => window.open(link, "_blank")}
         >
          <span className="text-gray-500 uppercase ">Buy it on:</span> 
-          <Image src={amazon} alt={name} className="  w-28 rounded-lg" />
+          <Image src={amazon} alt={name} className="  sm:w-28 w-20 rounded-lg" />
 
         </button>
       </div>

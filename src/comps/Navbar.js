@@ -2,12 +2,7 @@
 
 import React, { useState } from "react";
 import {
-  close,
-  logo,
-  menu,
-  colorLogoNoBackground,
-  colorLogoWithBackground,
-  logoColor,
+
   logoColorNoBackground,
 } from "../assets";
 import { navLinks } from "../constants";
