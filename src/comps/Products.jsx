@@ -39,24 +39,23 @@ const Products = () => {
         // className={`flex md:flex-row flex-col ${styles.paddingY}`}
         className={`flex  flex-col ${styles.paddingY} `}
       >
-        <div className={`flex md:flex-row flex-col  ${styles.paddingY} `}>
+        <div className={`flex flex-col  ${styles.paddingY} `}>
           <div
             // className={` flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
-            className={` flex-1 ${styles.flexStart} flex-col xl:px-0 `}
+            className={`  flex flex-col items-center justify-center xl:px-0 `}
           >
-            <div className="flex flex-row justify-between items-center w-full gap-3   text-secondary">
-              <h1 className="flex-1 font-poppins font-semibold ss:text-[60px]  text-[32px]   ss:leading-[100.8px] leading-[45px]">
+            <div className="flex flex-col justify-center items-center w-full gap-3   text-secondary">
+              <h1 className="flex-1 font-poppins font-semibold ss:text-[32px]  text-[22px]   ss:leading-[100.8px] leading-[45px]">
                 Best Products
                 {/* <br className="sm:block hidden" /> */}
-                <br className="" />
-                <span className="text-gradient">for Hydroponic Systems</span>
+                <span className="text-gradient font-bold"> for Hydroponic Systems</span>
               </h1>
             </div>
 
       
-            <h3 className={`${styles.paragraph}  w-full mt-5  text-secondary font-semibold`}>
+            {/* <h3 className={`${styles.paragraph}  w-full mt-5  text-secondary font-semibold`}>
               Top Picks for Your Home Hydroponic Garden{" "}
-            </h3>
+            </h3> */}
             {/* <h6 className={`${styles.paragraph}  w-full mt-5  text-secondary`}>
               Explore our range of best-in-class hydroponic products designed
               for home use. From beginner kits to advanced systems, we offer

@@ -1,107 +1,123 @@
 "use client";
 
 import React, { useState } from "react";
-import { NFT } from "../assets";
 import styles from "../app/style";
 import VisibilitySensor from "react-visibility-sensor";
 // import { motion } from "framer-motion";
-import { GetStarted, ImageWithPlaceholder } from "./index";
+import Head from "next/head"; // Assuming you're using Next.js
 
 const About = () => {
   const [elementIsVisible, setElementIsVisible] = useState(false);
 
-  const bg = {
-    true: {
-      left: "7rem",
-    },
-    false: {
-      left: "19rem",
-    },
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Hydrogrowhub",
+    "url": "https://hydrogrowhub.mtarex.com/",
+    "description": "Hydrogrowhub specializes in hydroponics and helping individuals succeed in home gardening. We recommend top-quality hydroponic equipment and supplies.",
   };
 
-  const variant = {
-    true: {
-      transform: "scale(2)",
-    },
-    false: {
-      transform: "scale(1)",
-    },
-  };
+
+
+
+
   return (
-    <VisibilitySensor
-      onChange={(isVisible) => setElementIsVisible(isVisible)}
-      minTopValue={300}
-    >
-      <section
-        id="about"
-        // className={`flex md:flex-row flex-col ${styles.paddingY}`}
-        className={`flex md:flex-row flex-col gap-5 ${styles.paddingY}`}
+    <>
+      <Head>
+        <title>
+          About Us | Hydrogrowhub - Your Hydroponic Gardening Partner
+        </title>
+        <meta
+          name="description"
+          content="At Hydrogrowhub, we are passionate about hydroponics and dedicated to helping you succeed in your home gardening journey. We connect you with the best hydroponic equipment and trusted suppliers."
+        />
+        <meta
+          name="keywords"
+          content="Hydroponics, Home Gardening, Hydroponic Equipment, Trusted Suppliers, Hydroponic Supplies"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+      </Head>
+
+      <VisibilitySensor
+        onChange={(isVisible) => setElementIsVisible(isVisible)}
+        minTopValue={300}
       >
-        <div
-          className={` flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+        <section
+          id="about"
+          className={`flex flex-col gap-5 ${styles.paddingY}`}
         >
-          <div className="flex flex-row justify-between items-center w-full">
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[42px]  text-[32px] text-secondary ss:leading-[100.8px] leading-[75px]">
-              Our Mission
-            </h1>
-          </div>
-
-          <p
-            className={`${styles.paragraph}  text-secondary max-w-[470px] mt-5`}
+          <div
+            className={`flex flex-col justify-center items-center xl:px-0 sm:px-16 px-6`}
           >
-            At Al Tarek, we are passionate about hydroponics and committed to
-            helping you succeed in your home gardening journey. Instead of
-            selling our own products, we carefully research and recommend the
-            best hydroponic equipment and supplies available online. Our mission
-            is to connect you with trusted suppliers offering top-quality
-            products that meet your gardening needs.
-            {/* At Al Tarek, we believe in the power of hydroponics to revolutionize
-            how we grow food. Our mission is to make hydroponic gardening
-            accessible and enjoyable for everyone, from hobbyists to commercial
-            growers. */}
-          </p>
-        </div>
-        <div
-          className={` flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
-        >
-          <div className="flex flex-row justify-between items-center w-full">
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[42px]  text-[32px] text-secondary ss:leading-[75px] leading-[45px]">
-              Why Trust Our Recommendations?
+            <h1 className="font-poppins font-semibold ss:text-[32px] text-[22px] text-secondary ss:leading-[100.8px] leading-[45px]">
+              About Hydrogrowhub - Your Hydroponic Gardening Partner
             </h1>
+
+            <p
+              className={`${styles.paragraph} text-secondary max-w-[1000px] mt-5`}
+            >
+              Welcome to <strong>Hydrogrowhub</strong>, your ultimate resource
+              for hydroponics and modern agriculture. We are passionate about
+              sustainable gardening and are dedicated to helping you thrive in
+              your home gardening journey. Rather than selling our own products,
+              we invest our time in meticulously researching and recommending
+              the best hydroponic equipment and supplies available online. Our
+              mission is to connect you with trusted suppliers offering
+              top-quality products that cater to your specific gardening needs.
+              Discover how you can cultivate a lush, thriving garden with the
+              right tools and techniques by exploring our{" "}
+              <a href="#products" className="text-secondary hover:underline">
+                {/* services */}
+                recommendations
+              </a>
+              .
+            </p>
           </div>
+        </section>
+      </VisibilitySensor>
 
-          <p
-            className={`${styles.paragraph}  text-secondary max-w-[470px] mt-5`}
-          >
-            We take the guesswork out of shopping for hydroponic supplies. Every
-            product we feature has been thoroughly reviewed and vetted by our
-            team of experts. When you click on a product link, you can be
-            confident that you’re getting the best in the industry.
-            {/* Founded by passionate gardeners, we started this journey to share
-            the incredible benefits of hydroponics. What began as a small
-            project has grown into a community of like-minded individuals
-            dedicated to sustainable, efficient gardening practices. */}
-          </p>
-        </div>
-
-        {/* <div
-          className={` flex-1 flex  ${styles.flexCenter} md:my-0 mx-5 my-10 relative`}
-        >
-    
-
-          <ImageWithPlaceholder
-            src={NFT}
-            alt="Description"
-            className="w-[100%] h-[100%] relative z-[5] rounded-full"
-          />
-
-          <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-          <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white-gradient bottom-40" />
-          <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
-        </div> */}
-      </section>
-    </VisibilitySensor>
+   
+    </>
   );
+
+  // return (
+  //   <VisibilitySensor
+  //     onChange={(isVisible) => setElementIsVisible(isVisible)}
+  //     minTopValue={300}
+  //   >
+  //     <section
+  //       id="about"
+  //       // className={`flex md:flex-row flex-col ${styles.paddingY}`}
+  //       className={`flex flex-col gap-5 ${styles.paddingY}`}
+  //     >
+  //       <div
+  //         className={` flex  flex-col justify-center items-center xl:px-0 sm:px-16 px-6`}
+  //       >
+  //           <h1 className=" font-poppins font-semibold ss:text-[42px]  text-[32px] text-secondary ss:leading-[100.8px] leading-[75px]">
+  //             About Us
+  //           </h1>
+
+  //         <p
+  //           className={`${styles.paragraph}  text-secondary max-w-[1000px] mt-5`}
+  //         >
+  //           At Hydrogrowhub, we are passionate about hydroponics and committed to
+  //           helping you succeed in your home gardening journey. Instead of
+  //           selling our own products, we carefully research and recommend the
+  //           best hydroponic equipment and supplies available online. Our mission
+  //           is to connect you with trusted suppliers offering top-quality
+  //           products that meet your gardening needs.
+
+  //         </p>
+  //       </div>
+
+  //     </section>
+  //   </VisibilitySensor>
+  // );
 };
 
 export default About;

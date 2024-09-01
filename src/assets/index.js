@@ -32,6 +32,7 @@ import plant3 from "./plant 3.PNG";
 
 import quotes from "./quotes.svg";
 import hydro from "./hydro.PNG";
+import amazon from "./amazon.png";
 
 // import colorLogoNoBackground from "./Color logo - no background.svg"
 // import colorLogoNoBackground from "./Color logo - no background.svg"
@@ -66,5 +67,6 @@ export {
   plant2,
   plant3,
   quotes,
-  hydro
+  hydro,
+  amazon
 };

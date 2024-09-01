@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       <div className={`bg-primary  ${styles.flexCenter} `}>
         <div className={`${styles.boxWidth}`}>
-          <Hydroponics />
+          <About />
         </div>
       </div>
 

@@ -20,18 +20,19 @@ export const navLinks = [
     id: "hero",
     title: "Home",
   },
+  // {
+  //   id: "What is Hydroponics?",
+  //   title: "What is Hydroponics?",
+  // },
   {
-    id: "What is Hydroponics?",
-    title: "What is Hydroponics?",
+    id: "about",
+    title: "About",
   },
   {
     id: "products",
     title: "Products",
   },
-  // {
-  //   id: "about",
-  //   title: "About",
-  // },
+  
 
 
   // {
@@ -71,88 +72,3 @@ export const products = [
   },
 ];
 
-//
-
-// export const exploreWorlds = [
-
-//   {
-//     id: 'system-1',
-//     imgUrl: '/planet-02.png',
-//     title: 'Nutrient Film Technique (NFT)',
-//     des: 'Ideal for leafy greens and herbs.',
-//   },
-//   {
-//     id: 'system-2',
-//     imgUrl: '/planet-03.png',
-//     title: 'Deep Water Culture (DWC)',
-//     des: ' Perfect for beginners and growing large plants.',
-//   },
-//   {
-//     id: 'system-3',
-//     imgUrl: '/planet-01.png',
-//     title: 'Dutch Bucket System',
-//     des: 'Great for tomatoes, cucumbers, and other large plants',
-
-//   },
-//   {
-//     id: 'system-4',
-//     imgUrl: '/planet-04.png',
-//     title: 'Aeroponics',
-//     des: 'Advanced system for maximum efficiency and growth.',
-//   },
-
-// ];
-export const feedback = [
-  {
-    id: "feedback-1",
-    content:
-      "I’ve been using hydroponic systems for a few years now, and I can honestly say the products I bought from [Your Website Name] are top-notch. The LED grow lights are super efficient, and my plants are thriving like never before. Shipping was fast, and everything arrived in perfect condition. Highly recommend!",
-    name: "John D.",
-    title: "Amazing Products and Fast Shipping!",
-    img: people01,
-  },
-  {
-    id: "feedback-2",
-    content:
-      "As a complete newbie to hydroponics, I was overwhelmed by all the options out there. But [Your Website Name] made it so easy! I bought one of their beginner kits, and it had everything I needed to get started. The step-by-step instructions were clear, and I’ve already harvested my first batch of lettuce. I’m so excited to keep growing!",
-    name: "Sarah M.",
-    title: "Perfect for Beginners!",
-    img: people02,
-  },
-  {
-    id: "feedback-3",
-    content:
-      "I’ve been experimenting with different hydroponic setups for my indoor garden, and [Your Website Name] has been my go-to source for all my supplies. They have a great selection of nutrients and growing mediums, and their guides really helped me dial in my system. The only thing I wish is that they had more organic options, but overall, I’m very satisfied.",
-    name: "Emily R.",
-    title: "Great Selection and Helpful Guides",
-    img: people03,
-  },
-];
-
-// export const footerLinks = [
-//   {
-//     title: "Useful Links",
-//     links: [
-//       {
-//         name: "+97126666613 - +971505000561",
-//         link: "https://www.hoobank.com/content/",
-//         icon: phone,
-//       },
-//       {
-//         name: "info@astmedia.ae",
-//         link: "info@astmedia.ae",
-//         icon: email,
-//       },
-//       {
-//         name: "www.astmedia.ae",
-//         link: "www.astmedia.ae",
-//         icon: internet,
-//       },
-//       {
-//         name: "Abu Dhabi , UAE",
-//         link: "https://www.hoobank.com/explore/",
-//         icon: location,
-//       },
-//     ],
-//   },
-// ];

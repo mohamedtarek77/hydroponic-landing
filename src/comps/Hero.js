@@ -35,16 +35,19 @@ const Hero = () => {
     >
       <section
         id="hero"
-        className={`flex md:flex-row flex-col ${styles.paddingY}`}
+        className={`flex  flex-col ${styles.paddingY}`}
       >
         <div
-          className={` flex-1 flex  ${styles.flexCenter} md:my-0 mx-5 my-10 `}
+          className={`  flex flex-col flex-wrap  items-center justify-center gap-3 md:my-0 mx-5 my-10 `}
         >
+          <h1 className=" font-poppins font-semibold ss:text-[42px]  text-[32px] text-secondary ss:leading-[100.8px] leading-[75px]">
+          Hydrogrowhub
+          </h1>
           <Image
             src={NFT}
             alt="Description"
             // className="w-[80%]  relative z-[5] rounded-3xl"
-            className="sm:w-[80%] w-full    rounded-3xl"
+            className="sm:w-[60%] w-full    rounded-3xl"
           />
         </div>
       </section>

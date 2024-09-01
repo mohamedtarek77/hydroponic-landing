@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { amazon } from "../assets/index";
 
 const ProductCard = ({ content, name, title, img, link }) => {
   return (
@@ -13,10 +14,13 @@ const ProductCard = ({ content, name, title, img, link }) => {
           <span className="text-gradient"> {name}</span>
         </h4>
         <button
-          className="bg-btn p-5 border rounded-xl font-semibold  text-[14px]  "
+          // className="bg-btn p-5 border rounded-xl font-semibold  text-[14px]  "
+          className=" flex flex-col justify-center items-center p-5 border rounded-xl font-semibold  text-[14px]  "
           onClick={() => window.open(link, "_blank")}
         >
-          View on Amazon
+         <span className="text-gray-500 uppercase ">Buy it on:</span> 
+          <Image src={amazon} alt={name} className="  w-28 rounded-lg" />
+
         </button>
       </div>
     </div>
