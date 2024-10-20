@@ -33,11 +33,11 @@ export default function Home() {
           <Hero />
         </div>
       </div>
-      <div className={`bg-primary  ${styles.flexCenter} `}>
+      {/* <div className={`bg-primary  ${styles.flexCenter} `}>
         <div className={`${styles.boxWidth}`}>
           <About />
         </div>
-      </div>
+      </div> */}
 
       <div className={`bg-primary ${styles.paddingX}   ${styles.flexCenter} `}>
         <div className={`${styles.boxWidth}`}>

@@ -48,7 +48,8 @@ const Products = () => {
               <h1 className="flex-1 font-poppins font-semibold ss:text-[32px]  text-[22px]   ss:leading-[100.8px] leading-[45px]">
                 Best Products
                 {/* <br className="sm:block hidden" /> */}
-                <span className="text-gradient font-bold"> for Hydroponic Systems</span>
+                {/* <span className="text-gradient font-bold"> for Diet and Keto plans</span> */}
+                <span className="text-gradient font-bold"> for PrimeSelects </span>
               </h1>
             </div>
 

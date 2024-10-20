@@ -1,20 +1,36 @@
 "use client";
 
 import React, { useState } from "react";
-import {
-
-  logoColorNoBackground,
-} from "../assets";
+import { logoColorNoBackground } from "../assets";
 import { navLinks } from "../constants";
 import { ImageWithPlaceholder } from "./index";
 import Image from "next/image";
 
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
+import { FaShareAlt } from "react-icons/fa"; // Share icon
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
+
+  // Share function using Web Share API
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: "Al Tarek Website",
+          // text: "Check out this awesome website!",
+          url: window.location.href, // Current website URL
+        });
+        console.log("Content shared successfully");
+      } catch (error) {
+        console.error("Error sharing content:", error);
+      }
+    } else {
+      alert("Your browser does not support the Web Share API");
+    }
+  };
   return (
     <nav className=" w-full flex py-6 justify-between items-center navbar">
       {/* <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" /> */}
@@ -43,6 +59,14 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+
+      {/* Share Button */}
+      <button
+        onClick={handleShare}
+        className="hidden sm:flex ml-4 items-center bg-secondary text-white py-2 px-4 rounded-full hover:bg-opacity-80 transition"
+      >
+        <FaShareAlt className="mr-2" /> Share
+      </button>
       <div className="sm:hidden flex flex-1 justify-end items-center">
         {toggle ? (
           <IoMdClose
@@ -70,7 +94,7 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                className={`font-poppins font-medium cursor-pointer text-[20px] ${
                   // active === nav.title ? "text-white" : "text-dimWhite"
                   active === nav.title
                     ? "text-secondary underline underline-offset-4"
@@ -84,6 +108,13 @@ const Navbar = () => {
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
+            {/* Share Button in Mobile View */}
+            <button
+              onClick={handleShare}
+              className=" w-32 mt-4 flex flex-row items-center justify-center bg-secondary text-white py-2 px-4 rounded-full hover:bg-opacity-80 transition"
+            >
+              <FaShareAlt className="mr-2" /> Share
+            </button>
           </ul>
         </div>
       </div>

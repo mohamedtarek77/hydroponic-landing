@@ -24,10 +24,13 @@ export const navLinks = [
   //   id: "What is Hydroponics?",
   //   title: "What is Hydroponics?",
   // },
-  {
-    id: "about",
-    title: "About",
-  },
+
+  // {
+  //   id: "about",
+  //   title: "About",
+  // },
+
+
   {
     id: "products",
     title: "Products",
@@ -35,40 +38,33 @@ export const navLinks = [
   
 
 
-  // {
-  //   id: "contact",
-  //   title: "Contact us",
-  // },
+  {
+    id: "contact",
+    title: "Contact us",
+  },
 ];
 
 export const products = [
   {
     id: "product-1",
-    content:
-      "Elevate your indoor gardening with this high-performance 24W LED hydroponic system, designed to simulate sunlight and boost plant growth up to 5 times faster than soil. Ideal for cultivating up to 12 herbs, veggies, or flowers, even in winter. The height-adjustable LED lights cater to plants at different stages, while the independent water pump ensures optimal oxygenation. Please note: seeds are not included. Enjoy a 60-day satisfaction guarantee with this perfect gift for garden enthusiasts.",
+    // content: "Get healthier with Joe Wicks' 30-Day Kick Start Plan. Featuring 100 recipes, six HIIT workouts, and easy weekly plans, it's your path to lasting habits, weight loss, and feeling great. Join millions who’ve transformed their lives with Joe’s simple and sustainable approach!",
     // name: "Billboards",
-    name: "Hydroponics Growing System, Indoor Garden with LED Grow Light",
+    name: "Plug-in Fly Traps for Flies",
     // title: "Founder & Leader",
-    img: plant1,
-    link: "https://amzn.to/4fW2U3T",
+    img: "https://m.media-amazon.com/images/I/41IsCkJieIL._AC_.jpg",
+    link: "https://amzn.to/4eQXJ4k",
   },
+ 
   {
-    id: "product-2",
-    content:
-      "Experience effortless indoor gardening with this 10-pod hydroponics growing system. Designed with an integrated pump system for optimal water circulation and a germination kit, it promotes faster, healthier growth for your favorite herbs and plants. The adjustable LED light mimics natural sunlight, ensuring your plants thrive year-round. With an automatic timer for easy management, this sleek black garden kit makes a stylish and functional addition to any home. Perfect for both beginners and seasoned gardeners.",
-    name: "Growing System 10 Pods, Herb Garden Kit inoor with Pump System, Germination Kit with LED Light, Automatic Timer, Black",
+    id: "product-7",
+    content: "These adjustable dumbbells range from 5 to 52.5 lbs with easy-to-use selection dials, allowing for full-body strength training. Includes a 1-year JRNY membership for on-demand workouts. Compact design: 16.9 L x 8.3 W x 9 H.",
+    // name: "Billboards",
+    name: "Bowflex SelectTech Series",
     // title: "Founder & Leader",
-    img: plant2,
-    link: "https://amzn.to/4fS0t2v",
+    img: "https://m.media-amazon.com/images/I/61jau6tusOL._AC_SX679_.jpg",
+    link: "https://amzn.to/3Z7VaWy",
   },
-  {
-    id: "product-3",
-    content:
-      "This hydroponic system features a silent water-pump circulation, helping plants grow 20% faster than in soil without the mess or seasonal limitations. It offers two grow modes: Vegetables Mode with blue light for leafy greens and Flower & Fruits Mode with red light for stronger fruit-bearing plants. The kit includes 20 biodegradable sponges, 10 grow domes, and adjustable LED lights for plants up to 18.7 inches tall. Perfect for germinating and transplanting tomatoes and peppers, it’s a thoughtful gift for any indoor gardening enthusiast.",
-    name: "Hydroponics Growing System, 10 pods Smart Garden with Auto Timer",
-    // title: "Founder & Leader",
-    img: plant3,
-    link: "https://amzn.to/4dQE8R0",
-  },
+ 
+  
 ];
 

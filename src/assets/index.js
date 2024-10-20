@@ -10,16 +10,16 @@ import logoColorNoBackground from "./logo-no-background.svg";
 
 
 
-import NFT from "./NFT WEB.PNG";
+import cook from "./cook.jpg";
 
 
-import plant1 from "./plant 1.PNG";
-import plant2 from "./plant 2.PNG";
-import plant3 from "./plant 3.PNG";
+
 
 
 import hydro from "./hydro.PNG";
 import amazon from "./amazon.png";
+import tarek from "./tarek.png";
+import saferBrand from "./saferBrand.png";
 
 // import colorLogoNoBackground from "./Color logo - no background.svg"
 // import colorLogoNoBackground from "./Color logo - no background.svg"
@@ -32,11 +32,9 @@ export {
 
 
   location,
-  NFT,
-
-  plant1,
-  plant2,
-  plant3,
+  cook,
+  saferBrand,
   hydro,
-  amazon
+  amazon,
+  tarek
 };
